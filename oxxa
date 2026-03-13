@@ -4,13 +4,13 @@ on:
   workflow_dispatch:
     inputs:
       agent_name:
-        description: 'oxxa'
+        description: 'gmoxxa'
         required: true
-        default: 'oxxa'
+        default: 'gmoxxa'
       agent_description:
-        description: 'oxxa'
+        description: 'gmoxxa'
         required: true
-        default: 'oxxa AI Agent'
+        default: 'gmoxxa AI Agent'
 
 jobs:
   verify:
@@ -38,4 +38,4 @@ jobs:
 
       - name: Step 3 - Link Human to Agent
         run: |
-          node scripts/manualLinkHumanToAgent.js --challenge '{"name": "oxxa", "description": "oxxa AI Agent"}'
+          node scripts/manualLinkHumanToAgent.js --challenge '{"name": "oxxa", "description": "gmoxxa AI Agent"}'
